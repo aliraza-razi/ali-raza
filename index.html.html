@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmad Store</title>
+  <link rel="stylesheet" href="style.csss.css" />
+</head>
+
+<body>
+
+  <!-- ======== RESPONSIVE SLIDE NAVBAR ======== -->
+  <nav class="navbar">
+    <h2 id="title">Ahmad Store</h2>
+
+    <!-- Menu Links -->
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#gifts">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ======== SEARCH BAR SECTION ======== -->
+    <section id="search-section" class="search-area">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search your favorite product..." oninput="toggleClearIcon()" />
+        <span id="clearIcon" onclick="clearSearch()">&#10005;</span>
+        <button onclick="searchProducts()">Search</button>
+      </div>
+    </section>
+
+    <!-- ======== CART ICON SECTION ======== -->
+    <div class="cart-icon" onclick="scrollToCart()">
+      🛒 <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- ======== SOCIAL MEDIA ICONS SECTION ======== -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1Cy3FXtWgr/" target="_blank" class="social fb"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@aliraza12.4?_t=ZS-90yYNdnskP2&_r=1" target="_blank" class="social tt"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.linkedin.com/in/ali-raza-686109377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank" class="social li"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:noshahiprinters444@gmail.com" class="social em">
+      <i class="fa fa-envelope"></i>
+      </a>
+
+
+
+
+      <!-- ======== WHATSAPP FLOAT ICON ======== -->
+      <a href="https://wa.me/923476718134" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+  </nav>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <!-- ===== Fullscreen Slider ===== -->
+  <section id="home" class="slider">
+    <div class="slide active" style="background-image: url('slides\ \(1\).jpg');">
+      <div class="slide-text">
+        <h1>Welcome to Ahmad Store</h1>
+        <p>Your one-stop shop for premium products.</p>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url('slides\ \(2\).jpg');">
+      <div class="overlay"></div>
+      <div class="slide-text">
+        <h1>Quality Products</h1>
+        <p>Top brands at the best prices.</p>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url('fast\ delivery.jpg');">
+      <div class="overlay"></div>
+      <div class="slide-text">
+        <h1>Fast Delivery</h1>
+        <p>We deliver nationwide in record time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Products Section ===== -->
+
+  <section id="gifts" class="jumbotron products-section">
+    <div class="content">
+      <h2>Our Products</h2>
+      <div class="product-container">
+
+        <div class="card">
+          <img src="watch 1.jpg" alt="Product 1" />
+          <h3>Watch</h3>
+          <p>Rs.3500</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="perfume.jpg" alt="Product 2" />
+          <h3>Perfume</h3>
+          <p>Rs.2500</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="gift box.jpg" alt="Product 3" />
+          <h3>Gift Box</h3>
+          <p>Rs.1200</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="power bank.jpg" alt="Product 4" />
+          <h3>Power Bank</h3>
+          <p>Rs.5500</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="laptop bag.webp" alt="Product 5" />
+          <h3>Laptop Bag</h3>
+          <p>Rs.3500</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="pillow.jpg" alt="Product 6" />
+          <h3>Pillow Print</h3>
+          <p>Rs.1999</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="mobile cover.png" alt="Product 7" />
+          <h3>Cover Print</h3>
+          <p>Rs.1299</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="mug.webp" alt="Product 8" />
+          <h3>Mug Print</h3>
+          <p>Rs.1150</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="ring light.jpg" alt="Product 9" />
+          <h3>Ring Light</h3>
+          <p>Rs.4200</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="headphone.webp" alt="Product 10" />
+          <h3>Wireless Headphone</h3>
+          <p>Rs.3300</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="pic frame.jpg" alt="Product 11" />
+          <h3>Magic Led Frame</h3>
+          <p>Rs.1899</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="card">
+          <img src="pic frame 3d.webp" alt="Product 12" />
+          <h3>3D Magic Frame</h3>
+          <p>Rs.4000</p>
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== About Section (Jumbo Style) ===== -->
+  <section id="about" class="about-jumbo">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>About Us – Your Personalized Online Gift Store</h2>
+      <p>
+        Welcome to <strong>Giftify Creations</strong>, your one-stop online gift store
+        where emotions meet creativity! We believe every gift tells a story — and we
+        help you tell yours beautifully. Whether it's a birthday surprise, anniversary
+        celebration, or friendship moment, we bring your imagination to life through
+        high-quality <strong>custom printed gifts</strong>.
+      </p>
+      <p>
+        From personalized mugs, magic mugs, and photo pillows to mobile covers, keychains,
+        photo frames, and custom wall clocks — every item reflects your love and
+        personality. Our creative printing team uses premium-quality materials and
+        modern printing techniques to ensure stunning, long-lasting results.
+      </p>
+      <p>
+        At <strong>Giftify Creations</strong>, gifts aren’t just products — they’re
+        memories wrapped with care. With fast delivery, affordable prices, and
+        exceptional service, we help you make your loved ones smile with something truly
+        special.
+      </p>
+      <p><em>✨ Make your memories more magical — with a personal touch!</em></p>
+    </div>
+  </section>
+
+
+  <!-- ===== Contact Us Section (Jumbo Style) ===== -->
+  <section id="contact" class="contact-jumbo">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Contact Us – We’d Love to Hear From You</h2>
+      <p>
+        Have questions, custom printing ideas, or need help placing your order?
+        Our friendly team at <strong>Giftify Creations</strong> is always here to assist you.
+      </p>
+      <p>
+        Whether you want to design a personalized mug, a magic photo frame, or a
+        unique pillow print — we’ll make it perfect just for you!
+      </p>
+
+      <div class="contact-info">
+        <p>📍 <strong>Address:</strong> Near Manawan Police Station Lahore, Pakistan</p>
+      </div>
+    </div>
+  </section>
+
+
+<footer class="footer">
+  <div class="payment-methods">
+    <h3>Accepted Payment Methods</h3>
+    <div class="payment-icons">
+      <img src="visa.png" alt="Visa">
+      <img src="master card.png" alt="Mastercard">
+      <img src="paypal.png" alt="PayPal">
+      <img src="jazcash.png" alt="JazzCash">
+      <img src="Easypaisa-logo.png" alt="Easypaisa">
+      <img src="cash on.png" alt="Cash on Delivery">
+      <img src="bank.png" alt="Bank Transfer">
+    </div>
+    <p class="secure-text">🔒 100% Secure & Trusted Payment Gateways</p>
+  </div>
+  <p class="footer-text"> © 2025 Ahmad Online Store | All Rights Reserved.</p>
+</footer>
+
+
+
+
+
+
+  <!--Submit Fom-->
+
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Fill Shipment Form</h2>
+      <form action="https://formspree.io/f/xzzkrqkg" method="POST" id="checkoutForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+
+        <input type="text" name="product" id="productInput" placeholder="Product Name" readonly>
+        <input type="text" name="price" id="priceInput" placeholder="Price" readonly>
+
+        <!-- Stylish Quantity -->
+        <label for="quantityInput">Quantity:</label>
+        <div class="qty-wrapper">
+          <button type="button" class="qty-btn" id="minusBtn">-</button>
+          <input id="quantityInput" name="quantity" value="1" min="1">
+          <button type="button" class="qty-btn" id="plusBtn">+</button>
+        </div>
+
+        <textarea name="address" placeholder="Delivery Address" required></textarea>
+        <button type="submit">Conform Your Order</button>
+      </form>
+
+
+          <!-- ======== JAVASCRIPT SECTION ======== -->
+
+                 <!--Slides-->
+      <script>
+        let slides = document.querySelectorAll(".slide");
+        let index = 0;
+        setInterval(() => {
+          slides[index].classList.remove("active");
+          index = (index + 1) % slides.length;
+          slides[index].classList.add("active");
+        }, 4000);
+      </script>
+
+      <script>
+        // === SEARCH FUNCTION ===
+        function clearSearch() {
+          const input = document.getElementById('searchInput');
+          input.value = '';
+          toggleClearIcon();
+          const products = document.querySelectorAll('.product-container .card');
+          products.forEach(product => product.style.display = 'block');
+        }
+
+        function toggleClearIcon() {
+          const input = document.getElementById('searchInput');
+          const clearIcon = document.getElementById('clearIcon');
+          clearIcon.style.display = input.value ? 'inline' : 'none';
+        }
+
+        function searchProducts() {
+          const input = document.getElementById('searchInput').value.toLowerCase();
+          const products = document.querySelectorAll('.product-container .card');
+          products.forEach(product => {
+            const name = product.querySelector('h3').textContent.toLowerCase();
+            product.style.display = name.includes(input) ? 'block' : 'none';
+          });
+        }
+
+        // === SMOOTH SCROLL MENU ===
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+
+        // === ADD TO CART (Animated) ===
+        document.addEventListener('DOMContentLoaded', function () {
+          let cartCount = 0;
+          const cartCountElement = document.getElementById('cartCount');
+          const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+          addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+              cartCount++;
+              cartCountElement.textContent = cartCount;
+
+              // Animation
+              cartCountElement.style.transform = 'scale(1.3)';
+              setTimeout(() => {
+                cartCountElement.style.transform = 'scale(1)';
+              }, 200);
+            });
+          });
+        });
+
+        // === CART ICON SCROLL ===
+        function scrollToCart() {
+          document.getElementById('gifts').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // === RESPONSIVE NAVBAR TOGGLE ===
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuIcon && navLinks) {
+          menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuIcon.classList.toggle('open');
+          });
+        }
+      </script>
+
+
+      <script>
+        function buyNow(productName, price) {
+          alert(`🛍️ You selected "${productName}" for Rs. ${price}.\nRedirecting to checkout...`);
+          // Future redirect
+          // window.location.href = "checkout.html";
+        }
+      </script>
+
+      <script>
+        // ===== Modal Setup =====
+        const modal = document.getElementById("checkoutModal");
+        const closeBtn = document.querySelector(".close-modal");
+        const buyBtns = document.querySelectorAll(".buy-now");
+        const productField = document.getElementById("productInput");
+        const priceField = document.getElementById("priceInput");
+        const qtyField = document.getElementById("quantityInput");
+        const minusBtn = document.getElementById("minusBtn");
+        const plusBtn = document.getElementById("plusBtn");
+
+        let unitPrice = 0;
+
+        // Open modal on Buy Now click
+        buyBtns.forEach(btn => {
+          btn.addEventListener("click", e => {
+            const card = e.target.closest(".card");
+            const name = card.querySelector("h3").innerText;
+            unitPrice = parseInt(card.querySelector("p").innerText.replace('Rs.', ''));
+
+            productField.value = name;
+            qtyField.value = 1;
+            priceField.value = unitPrice;
+
+            modal.style.display = "flex";
+          });
+        });
+
+        // Close modal
+        closeBtn.addEventListener("click", () => modal.style.display = "none");
+        window.addEventListener("click", e => {
+          if (e.target === modal) modal.style.display = "none";
+        });
+
+        // Quantity buttons
+        minusBtn.addEventListener("click", () => {
+          let qty = parseInt(qtyField.value);
+          if (qty > 1) qty--;
+          qtyField.value = qty;
+          priceField.value = unitPrice * qty;
+        });
+
+        plusBtn.addEventListener("click", () => {
+          let qty = parseInt(qtyField.value);
+          qty++;
+          qtyField.value = qty;
+          priceField.value = unitPrice * qty;
+        });
+
+        // Manual input
+        qtyField.addEventListener("input", () => {
+          let qty = parseInt(qtyField.value) || 1;
+          if (qty < 1) qty = 1;
+          qtyField.value = qty;
+          priceField.value = unitPrice * qty;
+        });
+
+      </script>
+
+
+
+
+
+
+</body>
+
+</html>
